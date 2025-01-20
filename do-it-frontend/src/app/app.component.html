@@ -169,8 +169,7 @@
 </style>
 
 <main class="main">
-  <div class="content">
-    <app-tasks-list></app-tasks-list>
-  </div>
+    <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+    <a [routerLink]="['/tasks']">Tasks List</a>
+    <router-outlet></router-outlet>
 </main>
-<router-outlet />

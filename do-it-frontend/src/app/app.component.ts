@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TasksListComponent } from "./tasks-list/tasks-list.component";
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TasksListComponent],
+  imports: [ MatSlideToggleModule, RouterModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

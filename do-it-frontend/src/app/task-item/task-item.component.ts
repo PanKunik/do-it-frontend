@@ -7,10 +7,11 @@ import { Task } from '../task';
   imports: [CommonModule],
   template: `
     <section class="task-item">
-      <p>{{ task.Title }}</p>
-      <p>{{ task.CreatedAt }}</p>
-      <p>{{ task.IsDone }}</p>
-      <p>{{ task.IsImportant }}</p>
+      <p>ID: {{ task.Id }} </p>
+      <p>Title: {{ task.Title }}</p>
+      <p>Created at: {{ task.CreatedAt }}</p>
+      <p>Done: {{ task.IsDone }}</p>
+      <p>Important: {{ task.IsImportant }}</p>
     </section>
   `,
   styleUrl: './task-item.component.scss'

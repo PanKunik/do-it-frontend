@@ -1,7 +1,7 @@
 export interface Task {
-    Id: string;
-    Title: string;
-    CreatedAt: Date;
-    IsDone: boolean;
-    IsImportant: boolean;
+    id: string;
+    title: string;
+    createdAt: Date;
+    isDone: boolean;
+    isImportant: boolean;
 }

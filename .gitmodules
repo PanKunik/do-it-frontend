@@ -1,0 +1,3 @@
+[submodule "do-it-api"]
+	path = do-it-api
+	url = https://github.com/pankunik/do-it-api.git

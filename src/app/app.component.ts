@@ -7,8 +7,8 @@ import { Module } from './models/module';
   selector: 'app-root',
   imports: [ RouterOutlet, NavigationComponent ],
   template: `
-    <header class="height-column">
-      <p class="logo">DoIt</p>
+    <header class="height-column accent-bg">
+      <p class="logo accent-text">DoIt</p>
       <app-navigation [modules]="this.modules"></app-navigation>
     </header>
     <main>

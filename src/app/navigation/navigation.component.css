@@ -1,7 +1,6 @@
 .main-nav a {
     display: flex;
     align-items: start;
-    color: #ffffff;
     justify-content: center;
     padding-block: .7rem;
 }

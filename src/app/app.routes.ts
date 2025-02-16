@@ -3,6 +3,7 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { HomeComponent } from './home/home.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TimersComponent } from './timers/timers.component';
+import { TaskComponent } from './task/task.component';
 
 export const routes: Routes = [
     {
@@ -13,7 +14,13 @@ export const routes: Routes = [
     {
         path: 'tasks-list',
         component: TasksListComponent,
-        title: 'Tasks list'
+        title: 'Tasks list',
+        children: [
+            {
+                path: ':id',
+                component: TaskComponent
+            }
+        ]
     },
     {
         path: 'calendar',

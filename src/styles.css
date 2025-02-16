@@ -3,7 +3,16 @@
     --accent-color-hover: #461E5C;
     --accent-color-active: #2F0C43;
 
+    --accent-color-text: #fafafa;
+
+    --main-color-text: #181818;
+
     --main-hover: #D9D9D9;
+    --main-active: #A6A6A6;
+
+    --important-color-text: #740000;
+    --my-day-color-text: #e4b314;
+    --planned-color-text: #182e8f;
 }
 
 * {
@@ -14,6 +23,19 @@
 
 body {
     font-family: Outfit, sans-serif;
+    color: var(--main-color-text);
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+}
+
+.accent-text {
+    color: var(--accent-color-text);
+}
+
+.main-text {
+    color: var(--main-color-text);
 }
 
 .wrapper {

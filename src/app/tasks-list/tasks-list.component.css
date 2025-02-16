@@ -17,13 +17,21 @@ section {
     gap: .25rem;
     flex-grow: 1;
     padding-block: .25rem;
-    padding-inline: .25rem;
+    padding-inline: .5rem .25rem;
     min-width: max-content;
-    color: #000000;
     text-decoration: none;
 }
 
 .list-of-tasks a:hover,
 .list-of-tasks a:focus-visible {
     background-color: var(--main-hover);
+}
+
+.list-of-tasks a:active {
+    background-color: var(--main-active);
+}
+
+.list-of-tasks a.router-link-active {
+    background-color: #F2F2F2;
+    border-block-end: 2px solid var(--accent-color);
 }

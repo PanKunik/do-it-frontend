@@ -1,0 +1,9 @@
+header {
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+.logo {
+    color: #ffffff;
+    padding-block: .5rem;
+}

@@ -1,0 +1,29 @@
+section {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
+
+.list-of-tasks {
+    border-inline-end: 1px solid black;
+    list-style: none;
+    padding-block-start: 1rem;
+    font-size: .85rem;
+}
+
+.list-of-tasks a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+    flex-grow: 1;
+    padding-block: .25rem;
+    padding-inline: .25rem;
+    min-width: max-content;
+    color: #000000;
+    text-decoration: none;
+}
+
+.list-of-tasks a:hover,
+.list-of-tasks a:focus-visible {
+    background-color: var(--main-hover);
+}

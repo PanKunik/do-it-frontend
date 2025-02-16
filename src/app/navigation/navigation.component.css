@@ -1,0 +1,21 @@
+.main-nav a {
+    display: flex;
+    align-items: start;
+    color: #ffffff;
+    justify-content: center;
+    padding-block: .7rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    background-color: var(--accent-color-hover);
+}
+
+.main-nav a:active {
+    background-color: var(--accent-color-active);
+}
+
+.main-nav a.active {
+    background-color: #ffffff;
+    color: var(--accent-color);
+}

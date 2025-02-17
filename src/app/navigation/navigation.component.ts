@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
     <nav class="main-nav">
       <ul>
         @for (module of modules; track module) {
-          <li><a class="accent-text" [routerLink]="module.routeLink" [routerLinkActive]="'active'"><mat-icon>{{ module.iconName }}</mat-icon></a></li>
+          <li><a class="accent-text" [routerLink]="module.routeLink" [routerLinkActive]="'active'"><mat-icon class="module-icon">{{ module.iconName }}</mat-icon></a></li>
         }
       </ul>
     </nav>

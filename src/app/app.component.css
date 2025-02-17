@@ -3,5 +3,6 @@ header {
 }
 
 .logo {
-    padding-block: .5rem;
+    padding-block: 1.25rem;
+    font-size: 1.75rem;
 }

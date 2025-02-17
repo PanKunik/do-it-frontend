@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from "./navigation/navigation.component";
 import { Module } from './models/module';
+import { ModulesService } from './data-access/modules.service';
 
 @Component({
   selector: 'app-root',
@@ -18,18 +19,10 @@ import { Module } from './models/module';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  modules: Module[] = [
-    {
-      iconName: 'check_circle',
-      routeLink: 'tasks-list'
-    },
-    {
-      iconName: 'today',
-      routeLink: 'calendar'
-    },
-    {
-      iconName: 'schedule',
-      routeLink: 'timers'
-    }
-  ];
+  public modules!: Module[];
+  private modulesService: ModulesService = inject(ModulesService);
+
+  constructor() {
+    this.modules = this.modulesService.getModules();
+  }
 }

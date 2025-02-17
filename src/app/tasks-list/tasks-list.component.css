@@ -1,25 +1,29 @@
 section {
     display: grid;
-    grid-template-columns: 10rem 1fr;
+    grid-template-columns: 15rem 10px 1fr;
+}
+
+.sub-menu-heading {
+    font-weight: normal;
+    margin-block-start: 1rem;
+    text-align: center;
 }
 
 .list-of-tasks {
-    border-inline-end: 1px solid black;
     list-style: none;
     padding-block-start: 1rem;
-    font-size: .85rem;
+    font-size: 1.5rem;
 }
 
 .list-of-tasks a {
     display: flex;
-    flex-direction: row;
+    flex: 1 0;
     align-items: center;
     gap: .25rem;
-    flex-grow: 1;
     padding-block: .25rem;
-    padding-inline: .5rem .25rem;
-    min-width: max-content;
+    padding-inline: .75rem .25rem;
     text-decoration: none;
+    border-block-end: 2px solid transparent;
 }
 
 .list-of-tasks a:hover,
@@ -34,4 +38,8 @@ section {
 .list-of-tasks a.router-link-active {
     background-color: #F2F2F2;
     border-block-end: 2px solid var(--accent-color);
+}
+
+.shadow {
+    background-image: linear-gradient(90deg, rgba(127, 127, 127, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }

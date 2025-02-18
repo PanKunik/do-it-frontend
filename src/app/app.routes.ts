@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
-import { HomeComponent } from './home/home.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TimersComponent } from './timers/timers.component';
 import { TaskComponent } from './task/task.component';
@@ -8,8 +7,8 @@ import { TaskComponent } from './task/task.component';
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent,
-        title: 'Home page'
+        pathMatch: 'full',
+        redirectTo: 'tasks-list'
     },
     {
         path: 'tasks-list',

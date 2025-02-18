@@ -1,6 +1,9 @@
+import { Task } from "./task";
+
 export interface TaskList {
-    id: number;
+    id: string;
     name: string;
     iconName: string;
     colorClass: string;
+    tasks?: Task[];
 }

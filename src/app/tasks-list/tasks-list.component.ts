@@ -3,11 +3,10 @@ import { TaskList } from '../models/taskList';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { TasksListService } from '../data-access/tasksList.service';
-import { TaskComponent } from "../task/task.component";
 
 @Component({
   selector: 'app-tasks-list',
-  imports: [MatIconModule, RouterModule, TaskComponent],
+  imports: [MatIconModule, RouterModule ],
   standalone: true,
   template: `
     <section>
@@ -20,7 +19,9 @@ import { TaskComponent } from "../task/task.component";
         </ul>
       </div>
       <div class="shadow"></div>
-      <app-task></app-task>
+      <div>
+        <router-outlet />
+      </div>
     </section>
   `,
   styleUrl: './tasks-list.component.css'

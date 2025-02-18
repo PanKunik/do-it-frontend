@@ -38,6 +38,7 @@ section {
 .list-of-tasks a.router-link-active {
     background-color: #F2F2F2;
     border-block-end: 2px solid var(--accent-color);
+    pointer-events: none;
 }
 
 .shadow {

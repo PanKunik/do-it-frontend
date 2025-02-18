@@ -10,14 +10,14 @@ export class ModulesService {
       iconName: 'check_circle',
       routeLink: 'tasks-list'
     },
-    {
-      iconName: 'today',
-      routeLink: 'calendar'
-    },
-    {
-      iconName: 'schedule',
-      routeLink: 'timers'
-    }
+    // {
+    //   iconName: 'today',
+    //   routeLink: 'calendar'
+    // },
+    // {
+    //   iconName: 'schedule',
+    //   routeLink: 'timers'
+    // }
   ];
 
   public getModules(): Module[] {

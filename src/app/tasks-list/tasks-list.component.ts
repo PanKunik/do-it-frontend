@@ -31,6 +31,6 @@ export class TasksListComponent {
   public tasksLists!: TaskList[];
 
   constructor() {
-    this.tasksLists = this.tasksListsService.getTasksLists();
+    // this.tasksLists = this.tasksListsService.getTasksLists();
   }
 }
